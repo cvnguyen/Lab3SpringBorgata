@@ -1,6 +1,9 @@
 package pokerBase;
 
+//NEED WILD AND JOKER CONSTRUCTORS
+
 import java.io.StringWriter;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -35,18 +38,19 @@ public class Deck {
 		ShuffleCards();
 
 	}
+
 	
-	public Deck(int NbrOfJokers) {
+	public Deck(int NbrOfJokers) { //added
 
 		this();
 		
-		for (short i = 1; i <= NbrOfJokers; i++) {
-			cards.add(new Card(eSuit.JOKER,eRank.JOKER,53));
+		for (int a = 0; a <= NbrOfJokers; a++) {
+			cards.add(new Card(eSuit.JOKER,eRank.JOKER,53+a));
 		}
 		ShuffleCards();
 	}
 	
-	public Deck(int NbrOfJokers, ArrayList<Card> WildCards) {
+	public Deck(int NbrOfJokers, ArrayList<Card> WildCards) { //added
 
 		this(NbrOfJokers);
 		
@@ -65,6 +69,9 @@ public class Deck {
 		ShuffleCards();
 	}
 	
+
+	
+		
 	private void ShuffleCards()
 	{
 		//	Shuffle the cards

@@ -28,7 +28,7 @@ public class GamePlay {
 		this.NbrOfCards = rle.GetNumberOfCards();
 		this.MaxNbrOfPlayers = rle.GetMaxNumberOfPlayers();
 		this.NbrOfJokers = rle.GetNumberOfJokers();
-		this.WildCards = rle.GetRuleCards();
+		this.WildCards = rle.GetRuleCards(); //from Rule
 		
 	}
 	

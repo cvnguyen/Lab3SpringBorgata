@@ -14,6 +14,14 @@ public enum eHandStrength {
 			return "Royal Flush";
 		}
 	},
+	
+	NaturalRoyalFlush(105){
+		public String toString()
+		{
+			return "Natural Royal Flush";
+		}
+	},
+	
 	StraightFlush(90){
 		public String toString()
 		{
