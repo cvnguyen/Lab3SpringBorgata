@@ -1,4 +1,5 @@
 package pokerBase;
+//Lab Group: Cindy Nguyen and Christian Pirhalla
 
 import java.util.ArrayList;
 import java.util.Collections;
